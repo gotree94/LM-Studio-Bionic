@@ -55,6 +55,81 @@ free -h
 df -h /
 ```
 
+```
+(base) gotree94@gotree94-ROG-Strix-SCAR-16-G635LX-G635LX:~$ lsb_release -a
+uname -m
+lscpu
+free -h
+df -h /
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 22.04.5 LTS
+Release:	22.04
+Codename:	jammy
+x86_64
+Architecture:                x86_64
+  CPU op-mode(s):            32-bit, 64-bit
+  Address sizes:             42 bits physical, 48 bits virtual
+  Byte Order:                Little Endian
+CPU(s):                      24
+  On-line CPU(s) list:       0-23
+Vendor ID:                   GenuineIntel
+  Model name:                Intel(R) Core(TM) Ultra 9 275HX
+    CPU family:              6
+    Model:                   198
+    Thread(s) per core:      1
+    Core(s) per socket:      1
+    Socket(s):               24
+    Stepping:                2
+    CPU max MHz:             6800.0000
+    CPU min MHz:             800.0000
+    BogoMIPS:                6144.00
+    Flags:                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe s
+                             yscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf t
+                             sc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic
+                              movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault intel_ppin ssbd ibrs ibp
+                             b stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a 
+                             rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni lam 
+                             wbnoinvd dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni v
+                             aes vpclmulqdq rdpid bus_lock_detect movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities i
+                             bpb_exit_to_user
+Virtualization features:     
+  Virtualization:            VT-x
+Caches (sum of all):         
+  L1d:                       768 KiB (20 instances)
+  L1i:                       1.3 MiB (20 instances)
+  L2:                        40 MiB (12 instances)
+  L3:                        36 MiB (1 instance)
+NUMA:                        
+  NUMA node(s):              1
+  NUMA node0 CPU(s):         0-23
+Vulnerabilities:             
+  Gather data sampling:      Not affected
+  Indirect target selection: Not affected
+  Itlb multihit:             Not affected
+  L1tf:                      Not affected
+  Mds:                       Not affected
+  Meltdown:                  Not affected
+  Mmio stale data:           Not affected
+  Reg file data sampling:    Not affected
+  Retbleed:                  Not affected
+  Spec rstack overflow:      Not affected
+  Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+  Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+  Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS Not affected; BHI BHI_DIS_S
+  Srbds:                     Not affected
+  Tsa:                       Not affected
+  Tsx async abort:           Not affected
+  Vmscape:                   Mitigation; IBPB before exit to userspace
+               total        used        free      shared  buff/cache   available
+Mem:            62Gi       4.5Gi       718Mi       222Mi        56Gi        56Gi
+Swap:           29Gi       0.0Ki        29Gi
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme1n1p4  3.6T  1.1T  2.4T  30% /
+
+```
+
+
 기대 결과:
 - Ubuntu 22.04 LTS
 - `x86_64` 아키텍처
